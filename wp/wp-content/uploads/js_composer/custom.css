@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700|Varela+Round);
+
+body {font-family:"Open Sans",sans-serif;
+font-size:1.5em
+}
+
+h1, h2, h3 {
+    font-family:"Arial Rounded MT Bold","Varela Round","Helvetica Rounded",Arial,sans-serif;
+    font-weight:bold;
+    color:#d71635;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size:1em;
+    font-weight:bold;
+    padding-bottom:0;
+    margin-bottom: 0;
+    
+}
+
+.site-header, .footer-wrap {
+   background: #d71635; 
+}
+
+.site-content {
+    padding-top: 0;
+}
+
+.primary-navigation {
+    margin-top: 1.5em;
+    float: left;
+}
+
+.entry-header {
+    display: none;
+}
+
+.header-main a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-bbanalytix {
+    float: left;
+}
+
+.nav-bbanalytix::after {
+    content: url("/link_img/logo_bluebox_analytics_60_rb.gif");
+} 
+
+.link-footer address {
+    font-style: normal;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .primary-navigation ul li a {
+        font-size: 14px;
+    }
+    .primary-navigation {
+        float: none;
+    }
+    
+    .submenu-dropdown-toggle {
+        clear: both;
+        padding: 10px 10px 0 0 !important;
+    }
+    
+}

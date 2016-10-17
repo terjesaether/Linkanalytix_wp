@@ -1,0 +1,65 @@
+/**CML: DB**/
+/*---------------------------------------------------------------
+  SQL DB BACKUP 12.10.2016 20:56 
+  ---------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+  TABLE: `wp_ceceppa_ml`
+  ---------------------------------------------------------------*/
+DROP TABLE IF EXISTS `wp_ceceppa_ml`;
+CREATE TABLE `wp_ceceppa_ml` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cml_default` int(1) DEFAULT NULL,
+  `cml_flag` varchar(100) DEFAULT NULL,
+  `cml_language` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `cml_language_slug` text,
+  `cml_locale` text,
+  `cml_enabled` int(11) DEFAULT NULL,
+  `cml_sort_id` int(11) DEFAULT NULL,
+  `cml_custom_flag` int(11) DEFAULT NULL,
+  `cml_rtl` int(11) DEFAULT NULL,
+  `cml_date_format` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+INSERT INTO `wp_ceceppa_ml`  VALUES   ('1','1','en_US','English','en','en_US','1','0','0','0','j. F Y');
+INSERT INTO `wp_ceceppa_ml`  VALUES ('2','0','de_DE','Deutsch','de','de_DE','1','1','0','0','j. F Y');
+INSERT INTO `wp_ceceppa_ml`  VALUES ('3','0','es_ES','Español','es','es_ES','1','2','0','0','j. F Y');
+INSERT INTO `wp_ceceppa_ml`  VALUES ('4','0','pl_PL','Polski','pl','pl_PL','1','3','0','0','j. F Y');
+INSERT INTO `wp_ceceppa_ml`  VALUES ('5','0','nb_NO','Norsk Bokmål','nb','nb_NO','1','4','0','0','j. F Y');
+
+/*---------------------------------------------------------------
+  TABLE: `wp_ceceppa_ml_cats`
+  ---------------------------------------------------------------*/
+DROP TABLE IF EXISTS `wp_ceceppa_ml_cats`;
+CREATE TABLE `wp_ceceppa_ml_cats` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cml_cat_id` int(11) NOT NULL,
+  `cml_cat_name` varchar(1000) NOT NULL,
+  `cml_cat_lang_id` int(11) NOT NULL,
+  `cml_cat_translation` varchar(1000) DEFAULT NULL,
+  `cml_cat_translation_slug` varchar(1000) DEFAULT NULL,
+  `cml_taxonomy` varchar(1000) DEFAULT NULL,
+  `cml_cat_description` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*---------------------------------------------------------------
+  TABLE: `wp_ceceppa_ml_posts`
+  ---------------------------------------------------------------*/
+DROP TABLE IF EXISTS `wp_ceceppa_ml_posts`;
+
+/*---------------------------------------------------------------
+  TABLE: `wp_ceceppa_ml_relations`
+  ---------------------------------------------------------------*/
+DROP TABLE IF EXISTS `wp_ceceppa_ml_relations`;
+CREATE TABLE `wp_ceceppa_ml_relations` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `lang_1` bigint(20) NOT NULL,
+  `lang_2` bigint(20) NOT NULL DEFAULT '0',
+  `lang_3` bigint(20) NOT NULL DEFAULT '0',
+  `lang_4` bigint(20) NOT NULL DEFAULT '0',
+  `lang_5` bigint(20) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+INSERT INTO `wp_ceceppa_ml_relations`  VALUES   ('1','4','6','7','8','9');
+INSERT INTO `wp_ceceppa_ml_relations`  VALUES ('2','5','0','0','0','0');

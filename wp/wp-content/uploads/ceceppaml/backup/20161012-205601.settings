@@ -1,0 +1,96 @@
+/**CML: SETTINGS**/
+/*---------------------------------------------------------------
+  SQL DB BACKUP 12.10.2016 20:56 
+  ---------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+  TABLE: `wp_options`
+  ---------------------------------------------------------------*/
+DELETE FROM `wp_options` WHERE option_name = 'cml_db_version';
+DELETE FROM `wp_options` WHERE option_name = 'cml_show_wizard';
+DELETE FROM `wp_options` WHERE option_name = 'cml_is_first_time';
+DELETE FROM `wp_options` WHERE option_name = 'cml_need_update_posts';
+DELETE FROM `wp_options` WHERE option_name = 'cml_first_install';
+DELETE FROM `wp_options` WHERE option_name = 'cml_migration_done';
+DELETE FROM `wp_options` WHERE option_name = 'cml_warning_no_default_language';
+DELETE FROM `wp_options` WHERE option_name = '_cml_installed_language';
+DELETE FROM `wp_options` WHERE option_name = 'cml_taxonomies_updated';
+DELETE FROM `wp_options` WHERE option_name = 'cml_languages_ids';
+DELETE FROM `wp_options` WHERE option_name = 'cml_languages_ids_keys';
+DELETE FROM `wp_options` WHERE option_name = 'cml_get_translation_from_po';
+DELETE FROM `wp_options` WHERE option_name = 'cml_use_settings_gen';
+DELETE FROM `wp_options` WHERE option_name = '_cml_scan_folders';
+DELETE FROM `wp_options` WHERE option_name = 'cml_1_locale';
+DELETE FROM `wp_options` WHERE option_name = 'cml_category_slugs';
+DELETE FROM `wp_options` WHERE option_name = 'cml_option_redirect';
+DELETE FROM `wp_options` WHERE option_name = 'cml_modification_mode';
+DELETE FROM `wp_options` WHERE option_name = 'cml_modification_mode_default';
+DELETE FROM `wp_options` WHERE option_name = 'cml_option_translate_category_url';
+DELETE FROM `wp_options` WHERE option_name = 'cml_option_translate_category_slug';
+DELETE FROM `wp_options` WHERE option_name = 'cml_option_notice';
+DELETE FROM `wp_options` WHERE option_name = 'cml_option_notice_pos';
+DELETE FROM `wp_options` WHERE option_name = 'cml_option_notice_after';
+DELETE FROM `wp_options` WHERE option_name = 'cml_option_notice_before';
+DELETE FROM `wp_options` WHERE option_name = 'cml_option_notice_post';
+DELETE FROM `wp_options` WHERE option_name = 'cml_option_notice_page';
+DELETE FROM `wp_options` WHERE option_name = 'cml_current_theme';
+DELETE FROM `wp_options` WHERE option_name = 'cml_current_theme_locale';
+DELETE FROM `wp_options` WHERE option_name = 'cml_posts_of_lang_1';
+DELETE FROM `wp_options` WHERE option_name = 'cml_posts_of_lang_2';
+DELETE FROM `wp_options` WHERE option_name = 'cml_posts_of_lang_3';
+DELETE FROM `wp_options` WHERE option_name = 'cml_posts_of_lang_4';
+DELETE FROM `wp_options` WHERE option_name = 'cml_posts_of_lang_5';
+DELETE FROM `wp_options` WHERE option_name = 'cml_unique_posts';
+DELETE FROM `wp_options` WHERE option_name = 'cml_hide_posts_for_lang_1';
+DELETE FROM `wp_options` WHERE option_name = 'cml_hide_posts_for_lang_2';
+DELETE FROM `wp_options` WHERE option_name = 'cml_hide_posts_for_lang_3';
+DELETE FROM `wp_options` WHERE option_name = 'cml_hide_posts_for_lang_4';
+DELETE FROM `wp_options` WHERE option_name = 'cml_hide_posts_for_lang_5';
+DELETE FROM `wp_options` WHERE option_name = '_cml_no_remove_extra_6';
+DELETE FROM `wp_options` WHERE option_name = '_cml_no_remove_extra_7';
+DELETE FROM `wp_options` WHERE option_name = '_cml_no_remove_extra_8';
+DELETE FROM `wp_options` WHERE option_name = '_cml_no_remove_extra_9';
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES   ('cml_db_version','34','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_show_wizard','','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_is_first_time','','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_need_update_posts','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_first_install','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_migration_done','3','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_warning_no_default_language','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('_cml_installed_language','English','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_taxonomies_updated','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_languages_ids','a:5:{i:1;s:6:\"lang_1\";i:2;s:6:\"lang_2\";i:3;s:6:\"lang_3\";i:4;s:6:\"lang_4\";i:5;s:6:\"lang_5\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_languages_ids_keys','a:5:{s:6:\"lang_1\";s:2:\"en\";s:6:\"lang_2\";s:2:\"de\";s:6:\"lang_3\";s:2:\"es\";s:6:\"lang_4\";s:2:\"pl\";s:6:\"lang_5\";s:2:\"nb\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_get_translation_from_po','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_use_settings_gen','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('_cml_scan_folders','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_1_locale','en','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_category_slugs','a:5:{i:1;s:8:\"category\";i:2;s:0:\"\";i:3;s:0:\"\";i:4;s:0:\"\";i:5;s:8:\"kategori\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_option_redirect','nothing','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_modification_mode','2','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_modification_mode_default','0','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_option_translate_category_url','0','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_option_translate_category_slug','0','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_option_notice','notice','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_option_notice_pos','top','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_option_notice_after','</h5>','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_option_notice_before','<h5 class=\\\"cml-notice\\\">','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_option_notice_post','0','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_option_notice_page','0','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_current_theme','Twenty Sixteen','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_current_theme_locale','/Users/mistermatu/Google Drive/websites/__prosjekter/Linkanalytix_wp/wordpress/wp-content/themes/twentysixteen/languages','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_posts_of_lang_1','a:2:{i:0;s:1:\"4\";i:1;s:1:\"5\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_posts_of_lang_2','a:1:{i:0;s:1:\"6\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_posts_of_lang_3','a:1:{i:0;s:1:\"7\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_posts_of_lang_4','a:1:{i:0;s:1:\"8\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_posts_of_lang_5','a:1:{i:0;s:1:\"9\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_unique_posts','a:0:{}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_hide_posts_for_lang_1','a:4:{i:0;s:1:\"6\";i:1;s:1:\"7\";i:2;s:1:\"8\";i:3;s:1:\"9\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_hide_posts_for_lang_2','a:4:{i:0;s:1:\"4\";i:1;s:1:\"7\";i:2;s:1:\"8\";i:3;s:1:\"9\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_hide_posts_for_lang_3','a:4:{i:0;s:1:\"4\";i:1;s:1:\"6\";i:2;s:1:\"8\";i:3;s:1:\"9\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_hide_posts_for_lang_4','a:4:{i:0;s:1:\"4\";i:1;s:1:\"6\";i:2;s:1:\"7\";i:3;s:1:\"9\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('cml_hide_posts_for_lang_5','a:4:{i:0;s:1:\"4\";i:1;s:1:\"6\";i:2;s:1:\"7\";i:3;s:1:\"8\";}','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('_cml_no_remove_extra_6','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('_cml_no_remove_extra_7','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('_cml_no_remove_extra_8','1','yes');
+INSERT INTO `wp_options` (  option_name, option_value, autoload  ) VALUES ('_cml_no_remove_extra_9','1','yes');
