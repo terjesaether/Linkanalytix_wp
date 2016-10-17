@@ -46,9 +46,7 @@ h4 {
     float: left;
 }
 
-.nav-bbanalytix::after {
-    content: url("/link_img/logo_bluebox_analytics_60_rb.gif");
-} 
+
 
 .link-footer address {
     font-style: normal;
