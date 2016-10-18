@@ -1,7 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700|Varela+Round);
 
-body {font-family:"Open Sans",sans-serif;
-font-size:1.5em
+body {
+    font-family:"Open Sans",sans-serif;
+    font-size:1.5em;
 }
 
 h1, h2, h3 {
@@ -17,35 +18,63 @@ h4 {
     font-weight:bold;
     padding-bottom:0;
     margin-bottom: 0;
-    
 }
 
-.site-header, .footer-wrap {
+#header {
    background: #d71635; 
 }
-
-.site-content {
-    padding-top: 0;
-}
-
-.primary-navigation {
-    margin-top: 1.5em;
-    float: left;
-}
-
-.entry-header {
+#intro {
     display: none;
 }
 
-.header-main a {
-    color: #fff;
+.menu a {
+    color: #fff !important;
     text-transform: uppercase;
+    font-size: 16px;
 }
-
-.nav-bbanalytix {
+.menu a:hover {
+    color: #ccc !important;
+}
+.sub-menu {
+    background: #000 !important;
+    margin-top: -50px !important;
+}
+#header-links {
     float: left;
 }
+.wpb_content_element {
+    margin-bottom: 0;
+}
+.vc_row {
+    padding-bottom: 30px;
+    margin-top: -30px;
+}
 
+#footer-core {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+#footer {
+   background: #d71635; 
+   border: none;
+}
+#footer .widget {
+    border: none;
+}
+#footer .textwidget {
+    color: #fff;
+}
+#sub-footer {
+    background: #d71635;
+    border: none;
+}
+#sub-footer-core {
+    border: none;
+}
 
 
 .link-footer address {
@@ -53,19 +82,15 @@ h4 {
     color: #fff;
     width: 100%;
     text-align: center;
+    padding-bottom: 25px;
 }
 
+
+
 @media screen and (max-width: 960px) {
-    .primary-navigation ul li a {
-        font-size: 14px;
-    }
-    .primary-navigation {
-        float: none;
-    }
+   .sub-menu {
+    margin-top: 0 !important;
+}
     
-    .submenu-dropdown-toggle {
-        clear: both;
-        padding: 10px 10px 0 0 !important;
-    }
     
 }
